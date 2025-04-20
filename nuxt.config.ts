@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "shadcn-nuxt",
+    "@pinia/nuxt",
   ],
 
   // インポート用(Auto-imports含む)の型定義に追加するためスキャンしない

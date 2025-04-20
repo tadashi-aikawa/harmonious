@@ -1,8 +1,8 @@
-import { useReqres } from "~/composables/useReqres";
 import type { User } from "~/domain/entities/User";
+import { useReqresStore } from "~/store/useReqres";
 
 export function useUsers() {
-  const { client } = useReqres();
+  const rqStore = useReqresStore();
 
   const users = ref<User[] | null>(null);
   const error = ref<Error | null>(null);
@@ -11,7 +11,7 @@ export function useUsers() {
   const fetchUsers = async () => {
     loading.value = true;
     // WARN: 本来ならOASでdelayを定義しておく(定義がないので型エラーになる)
-    const { data: res, error: _error } = await client.GET("/users", {
+    const { data: res, error: _error } = await rqStore.client.GET("/users", {
       params: { query: { delay: 1 } },
     });
     loading.value = false;
