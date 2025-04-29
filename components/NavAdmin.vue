@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { NuxtLink } from "#components";
 import { ChevronRight, type LucideIcon } from "lucide-vue-next";
 import {
   Collapsible,
@@ -58,9 +59,9 @@ defineProps<{
                 :key="subItem.title"
               >
                 <SidebarMenuSubButton as-child>
-                  <a :href="subItem.url">
+                  <NuxtLink :to="subItem.url">
                     <span>{{ subItem.title }}</span>
-                  </a>
+                  </NuxtLink>
                 </SidebarMenuSubButton>
               </SidebarMenuSubItem>
             </SidebarMenuSub>
