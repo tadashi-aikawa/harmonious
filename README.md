@@ -7,6 +7,10 @@
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" />
 </div>
 
+## URL
+
+https://tadashi-aikawa.github.io/harmonious/
+
 ## 開発
 
 ### 依存関係インストール
@@ -21,5 +25,5 @@ pnpm i
 pnpm dev
 ```
 
-http://localhost:3000
+http://localhost:3000/harmonious
 
