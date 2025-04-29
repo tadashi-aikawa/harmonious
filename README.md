@@ -21,5 +21,5 @@ pnpm i
 pnpm dev
 ```
 
-http://localhost:3000/users
+http://localhost:3000
 
