@@ -23,9 +23,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - uses: actions/configure-pages@v5
-        with:
-          static_site_generator: nuxt
       - run: corepack enable
       - run: pnpm install
       - run: pnpm run generate
