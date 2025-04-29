@@ -57,7 +57,7 @@ const data = {
           url: "/requests/oss",
         },
         {
-          title: "リリース",
+          title: "Bluesky",
           url: "/coming-soon",
         },
         {
