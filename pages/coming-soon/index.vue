@@ -6,7 +6,8 @@ const { users, loading, fetchUsers } = useUsers();
 </script>
 
 <template>
-  <div>
+  <div class="flex h-screen w-full flex-col items-center justify-center">
+    <h1 class="text-2xl font-bold">Coming soon...</h1>
     <Button variant="destructive" size="lg" class="m-12" @click="fetchUsers">
       {{ loading ? "Loading..." : "Fetch Users" }}
     </Button>

@@ -3,6 +3,8 @@ import "vue";
 declare module "vue" {
   // for vue components
   interface AllowedComponentProps {
+    href?: string;
+    alt?: string;
     // inputにフォールスルー属性として利用
     type?: unknown;
     dataSlot?: unknown;

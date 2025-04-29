@@ -10,10 +10,7 @@ export function useUsers() {
 
   const fetchUsers = async () => {
     loading.value = true;
-    // WARN: 本来ならOASでdelayを定義しておく(定義がないので型エラーになる)
-    const { data: res, error: _error } = await rqStore.client.GET("/users", {
-      params: { query: { delay: 1 } },
-    });
+    const { data: res, error: _error } = await rqStore.client.GET("/users");
     loading.value = false;
 
     // WARN: 本来ならOASの方でエラー定義をしておく

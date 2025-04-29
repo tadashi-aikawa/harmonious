@@ -1,8 +1,15 @@
+<script setup lang="ts">
+import AppSidebar from "~/components/AppSidebar.vue";
+import { SidebarInset, SidebarProvider } from "~/components/ui/sidebar";
+</script>
+
 <template>
-  <div>
-    <p class="bg-green-300 p-2 text-lg font-bold">
-      Some default layout content shared across all pages
-    </p>
-    <slot />
-  </div>
+  <SidebarProvider>
+    <AppSidebar />
+    <SidebarInset>
+      <main>
+        <slot />
+      </main>
+    </SidebarInset>
+  </SidebarProvider>
 </template>

@@ -6,3 +6,20 @@
     </p>
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" />
 </div>
+
+## 開発
+
+### 依存関係インストール
+
+```bash
+pnpm i
+```
+
+### 開発起動
+
+```bash
+pnpm dev
+```
+
+http://localhost:3000/users
+
