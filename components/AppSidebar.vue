@@ -58,11 +58,11 @@ const data = {
         },
         {
           title: "Bluesky",
-          url: "/coming-soon",
+          url: "/requests/bluesky",
         },
         {
-          title: "温泉",
-          url: "/coming-soon",
+          title: "Minerva",
+          url: "/requests/minerva",
         },
       ],
     },
