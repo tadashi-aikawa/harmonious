@@ -95,7 +95,7 @@ const data = {
         },
         {
           title: "一覧を見る",
-          url: "/coming-soon",
+          url: "/requests",
         },
       ],
     },
